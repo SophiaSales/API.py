@@ -6,4 +6,8 @@ app = Flask("Hello Word")
 def olaMundo():
     return{"ola": "mundo"}
 
+@app.route("/cadastro", methods=["POST"])
+def cadastro():
+    return{"id": 0}    
+
 app.run()
