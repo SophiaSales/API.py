@@ -9,7 +9,7 @@ app = Flask("Hello Word")
 # rota get 
 @app.route("/", methods=["GET"])
 def olaMundo():
-    return{"ola": "mundo"}
+    return sensorTemp
 
 # rota post 
 @app.route("/cadastro", methods=["POST"])
